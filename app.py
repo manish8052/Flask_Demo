@@ -28,9 +28,9 @@ def hello_world():
     allTodo = Todo.query.all() 
     return render_template('index.html', allTodo=allTodo)
 
-@app.route('/home', methods=['GET', 'POST'])
-def home():
-    return redirect("/")
+@app.route('/about', methods=['GET', 'POST'])
+def about():
+    return 'This is about page ! This website is under construction'
     
 @app.route('/show')
 def products():
